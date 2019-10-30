@@ -1,0 +1,36 @@
+{
+  "name": "npm-package-typescript-starter",
+  "version": "1.0.0",
+  "description": "Simple boilerplate for NPM Package using TypeScript",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "package": "tsc && node minify.js && npm pack",
+    "test": "jest --detectOpenHandles --runInBand",
+    "test:coverage": "jest --forceExit --runInBand --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/adisreyaj/npm-package-typescript-starter.git"
+  },
+  "keywords": [
+    "NPM Package",
+    "TypeScript"
+  ],
+  "author": {
+    "name": "Adithya Sreyaj",
+    "email": "adi.sreyaj@gmail.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.20",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "terser": "^4.3.9",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "xstate": "^4.6.7"
+  }
+}
