@@ -30,7 +30,4 @@
     "terser": "^4.3.9",
     "typescript": "^3.6.4"
   },
-  "dependencies": {
-    "xstate": "^4.6.7"
-  }
 }
